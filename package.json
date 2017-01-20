@@ -1,0 +1,13 @@
+{
+  "name": "json-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "faker": "^3.1.0",
+    "json-server": "^0.9.4",
+    "ramda": "^0.23.0"
+  }
+}

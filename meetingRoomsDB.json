@@ -1,0 +1,85 @@
+{
+  "departments": [
+    {"id": 1, "name":"finance"},
+    {"id": 2, "name":"operational"}
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "first": "Nickolas",
+      "last": "Wilderman",
+      "phone": "239.933.1719",
+      "email": "Dedric.Yundt60@yahoo.com",
+      "level": "associate",
+      "age": 25,
+      "departmentId": 1
+    },
+    {
+      "id": 2,
+      "first": "Rupert",
+      "last": "Brakus",
+      "phone": "618.345.1976 x998",
+      "email": "Laurel_Wiza@yahoo.com",
+      "level": "senior",
+      "age": 35,
+      "departmentId": 2
+    },
+    {
+      "id": 3,
+      "first": "Jessika",
+      "last": "Dickens",
+      "phone": "414-513-7744",
+      "email": "Gilberto_Bashirian@gmail.com",
+      "level": "associate",
+      "age": 26,
+      "departmentId": 1
+    },
+    {
+      "id": 4,
+      "first": "Doris",
+      "last": "Schaefer",
+      "phone": "1-943-314-7995",
+      "email": "Jaden.Kihn@hotmail.com",
+      "level": "mid",
+      "age": 28,
+      "departmentId": 1
+    },
+    {
+      "id": 5,
+      "first": "Dax",
+      "last": "Stoltenberg",
+      "phone": "1-136-924-1171",
+      "email": "Jewell.Goyette18@hotmail.com",
+      "level": "mid",
+      "age": 29,
+      "departmentId": [1,2]
+    },
+    {
+      "id": 6,
+      "first": "Nestor",
+      "last": "Wintheiser",
+      "phone": "1-525-311-6224 x123",
+      "email": "Jess.Brekke13@yahoo.com",
+      "level": "senior",
+      "age": 32,
+      "departmentId": 2
+    }
+  ],
+  "meeting-rooms": [
+    {
+      "id": 1,
+      "name": "Tiger Den",
+      "availability": "occupied"
+    },
+    {
+      "id": 2,
+      "name": "Glass Den",
+      "availability": "occupied"
+    },
+    {
+      "id": 3,
+      "name": "Wooden Den",
+      "availability": "empty"
+    }
+  ]
+}
