@@ -25,6 +25,11 @@ server.use('/meetingrooms',jsonServer.router('meetingRoomsDB.json'))
 //Links will be accessible under https://localhost:3000/tutor/db
 server.use('/tutor',jsonServer.router('studentsDB.json'))
 
+
+//Project 3: Maxis Hotlink
+server.use('/maxis',jsonServer.router('meetingRoomsDB.json'))
+
+
 //1 server with multiple routers
 server.listen(3000, function () {
     console.log('JSON Server is running')
