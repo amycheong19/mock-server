@@ -1,18 +1,6 @@
 {
   "students": [
     {
-      "id": 1,
-      "first_name": "Hailey",
-      "last_name": "Wilton",
-      "phone": "175-827-1933"
-    },
-    {
-      "id": 2,
-      "first_name": "Darrion",
-      "last_name": "Alford",
-      "phone": "875-729-5392"
-    },
-    {
       "id": 3,
       "first_name": "Greta",
       "last_name": "Reyna",

@@ -1,0 +1,5 @@
+{
+  "/employees/:id": "/employees?id=:id",
+  "/employees/all": "/employees/",
+  "/employeesLevel/:level": "/employees?level=:level"
+}

@@ -1,29 +1,27 @@
 let jsonServer = require("json-server");
 let server = jsonServer.create()
-server.use(jsonServer.defaults())
+var middlewares = jsonServer.defaults()
 
-//Project 1: Meeting-rooms
-//Links will be accessible under https://localhost:3000/meetingrooms/db
-server.use('/meetingrooms',jsonServer.rewriter({
-  "/employees/all": "/employees",
-  "/employees/:level": "/employees?level=:level",
-  "/rooms/:availability": "/meeting-rooms?availability=:availability",
-  //To include children resources, add _embed
-  //              parent resource, add _expand
-  "/departments/:department": "/departments?name=:department&_embed=employees",
-  //_lte (less than equal), _gte (greater than equal), _ne (exclude), _like (like)
-  "/employeesBelow30": "/employees?age_lte=31",
-}))
-server.use('/meetingrooms',jsonServer.router('meetingRoomsDB.json'))
+var meetingRoomsRewriter = require('./meetingRooms/meetingRoomsRewriter.json')
+server.use(jsonServer.rewriter(meetingRoomsRewriter))
 
-//NOTE: Search, Sort, Paginate need to use original url (rewriter doesn't work)
-//Sort: _sort, _order (optional)
-//Paginate: _page, _limit (optional)
-//Search: q
+var meetingRoomsRouter = require("./meetingRooms/meetingRoomsRoute");
+var studentsRouter = require("./students/studentsRoute");
+var piratedMeetingRoom = require('./meetingRooms/meetingRoomsRoute')
 
-//Project 2: Student Tutor
-//Links will be accessible under https://localhost:3000/tutor/db
-server.use('/tutor',jsonServer.router('studentsDB.json'))
+
+server.use('/meetingrooms', meetingRoomsRouter)
+server.use('/tutor', studentsRouter)
+server.use('/pirateMR', piratedMeetingRoom)
+
+
+Object.keys(meetingRoomsRouter.db.getState())
+  .forEach((key) => console.log(`/${key}`))
+// Object.keys(studentsRouter.db.getState())
+//   .forEach((key) => console.log(`/${key}`))
+Object.keys(piratedMeetingRoom.db.getState())
+    .forEach((key) => console.log(`/${key}`))
+
 
 //1 server with multiple routers
 server.listen(3000, function () {

@@ -1,7 +1,13 @@
 {
   "departments": [
-    {"id": 1, "name":"finance"},
-    {"id": 2, "name":"operational"}
+    {
+      "id": 1,
+      "name": "finance"
+    },
+    {
+      "id": 2,
+      "name": "operational"
+    }
   ],
   "employees": [
     {
@@ -13,16 +19,6 @@
       "level": "associate",
       "age": 25,
       "departmentId": 1
-    },
-    {
-      "id": 2,
-      "first": "Rupert",
-      "last": "Brakus",
-      "phone": "618.345.1976 x998",
-      "email": "Laurel_Wiza@yahoo.com",
-      "level": "senior",
-      "age": 35,
-      "departmentId": 2
     },
     {
       "id": 3,
@@ -43,16 +39,6 @@
       "level": "mid",
       "age": 28,
       "departmentId": 1
-    },
-    {
-      "id": 5,
-      "first": "Dax",
-      "last": "Stoltenberg",
-      "phone": "1-136-924-1171",
-      "email": "Jewell.Goyette18@hotmail.com",
-      "level": "mid",
-      "age": 29,
-      "departmentId": [1,2]
     },
     {
       "id": 6,
