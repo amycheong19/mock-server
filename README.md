@@ -12,5 +12,4 @@ Added in [Faker](https://github.com/marak/Faker.js/) to populate random data as 
 - **Filter**: http://localhost:3000/[employees]?[level=:level]
 
   **\:** indicates parameters and
-
   Add **&** for following parameters

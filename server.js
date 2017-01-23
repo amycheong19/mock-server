@@ -23,6 +23,11 @@ Object.keys(piratedMeetingRoom.db.getState())
     .forEach((key) => console.log(`/${key}`))
 
 
+
+//Project 3: Maxis Hotlink
+server.use('/maxis',jsonServer.router('meetingRoomsDB.json'))
+
+
 //1 server with multiple routers
 server.listen(3000, function () {
     console.log('JSON Server is running')
