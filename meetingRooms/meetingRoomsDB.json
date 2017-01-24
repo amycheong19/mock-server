@@ -49,22 +49,6 @@
       "level": "senior",
       "age": 32,
       "departmentId": 2
-    },
-    {
-      "first": "Jessika1",
-      "last": "Dickens",
-      "phone": "414-513-7744",
-      "email": "Gilberto_Bashirian@gmail.com",
-      "level": "associate",
-      "age": 26,
-      "departmentId": 1,
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
     }
   ],
   "meeting-rooms": [

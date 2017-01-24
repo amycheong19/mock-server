@@ -6,7 +6,7 @@ var meetingRoomsRewriter = require('./meetingRooms/meetingRoomsRewriter.json')
 server.use(jsonServer.rewriter(meetingRoomsRewriter))
 
 var meetingRoomsRouter = require("./meetingRooms/meetingRoomsRoute");
-var studentsRouter = require("./students/studentsRoute");
+// var studentsRouter = require("./students/studentsRoute");
 
 server.use(meetingRoomsRouter)
 //server.use('/tutor', studentsRouter) //Disable studentsRouter
