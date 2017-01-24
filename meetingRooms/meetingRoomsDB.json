@@ -11,16 +11,6 @@
   ],
   "employees": [
     {
-      "id": 1,
-      "first": "Nickolas",
-      "last": "Wilderman",
-      "phone": "239.933.1719",
-      "email": "Dedric.Yundt60@yahoo.com",
-      "level": "associate",
-      "age": 25,
-      "departmentId": 1
-    },
-    {
       "id": 2,
       "first": "Rupert",
       "last": "Brakus",
@@ -69,6 +59,12 @@
       "age": 26,
       "departmentId": 1,
       "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
     }
   ],
   "meeting-rooms": [

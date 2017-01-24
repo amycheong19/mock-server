@@ -1,12 +1,15 @@
 {
   "/meetingrooms/": "/",
+  "/employeesDB/": "/employees/db",
   "/employees/all": "/employees/",
   "/employeesLevel=:level": "/employees?level=:level",
   "/employeesBelow30": "/employees?age_lte=31",
 
+  "/roomsDB/": "/meeting-rooms/db",
   "/rooms/all": "/meeting-rooms/",
-  "/rooms/availability=:availability": "/meeting-rooms?availability=:availability",
 
+  "/rooms/availability=:availability": "/meeting-rooms?availability=:availability",
+  
   "/departments/all": "/departments/",
   "/departments/:department": "/departments?name=:department&_embed=employees"
 }

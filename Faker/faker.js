@@ -26,4 +26,4 @@ function generateData () {
 
 let data = generateData();
 
-require('fs').writeFileSync('studentsDB.json', JSON.stringify(data, null, 2), 'utf-8');
+require('fs').writeFileSync('fakerStudentsDB.json', JSON.stringify(data, null, 2), 'utf-8');
