@@ -5,20 +5,19 @@ var router = express.Router()
 
 // define routes
 router.get('/', function (req, res) {
-  // res.send('students home page')
-  res.status(500).json('{students:{id: 1, name: "Mario"},{id: 2, name: "Luigi"}}')
+  res.send('students home page')
 })
 
 router.get('/students', function (req, res) {
   res
     .status(200)
-    .json('{students:{id: 1, name: "Mario"},{id: 2, name: "Luigi"}}')
+    .json("{students:{id: 1, name: 'Mario'},{id: 2, name: 'Luigi'}}")
 })
 
 router.get('/students/:id', function (req, res) {
   res
     .status(200)
-    .json('{id: 1, name: "Mario"}')
+    .json("{id: 1, name: 'Mario'}")
 })
 
 router.delete('/students/:id', function (req, res) {
